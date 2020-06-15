@@ -2,44 +2,47 @@
 
 ## Table of Contents
 
-* Foreword
-* Preface
-* Chapter 1: What Is JavaScript?
-    * About This Book
+* Prólogo
+* Prefacio
+* Capítulo 1: ¿Qué Es JavaScript?
+    * Sobre este Libro
     * What's With That Name?
-    * Language Specification
-    * Many Faces
-    * Backwards & Forwards
-    * What's in an Interpretation?
-    * Strictly Speaking
-    * Defined
-* Chapter 2: Surveying JS
-    * Each File is a Program
-    * Values
-    * Declaring and Using Variables
-    * Functions
-    * Comparisons
-    * How We Organize in JS
-    * The Rabbit Hole Deepens
-* Chapter 3: Digging To The Roots Of JS
-    * Iteration
-    * Closure
-    * `this` Keyword
-    * Prototypes
-    * Asking "Why?"
-* Chapter 4: The Bigger Picture
-    * Pillar 1: Scope and Closure
-    * Pillar 2: Prototypes
-    * Pillar 3: Types and Coercion
-    * With the Grain
-    * In Order
-* Appendix A: Exploring Further
-    * Values vs. References
-    * So Many Function Forms
-    * Coercive Conditional Comparison
-    * Prototypal "Classes"
-* Appendix B: Practice, Practice, Practice!
-    * Practicing Comparisons
-    * Practicing Closure
-    * Practicing Prototypes
-    * Suggested Solutions
+    * Especificación del Lenguaje
+    * Muchas Caras
+    * Hacia Detrás y Hacia Adelante
+    * ¿Qué Hay en la Interpretación?
+    * Estrictamente Hablando
+    * Definido
+* Capítulo 2: Inspeccionando JS
+    * Cada Archivo Es un Programa
+    * Valores
+    * Declarando y Usando Variables
+    * Funciones
+    * Comparaciones
+    * ¿Cómo Organizarse en JS?
+    * Adentrándonos en la Madriguera
+* Capítulo 3: Hacia las Entrañas de JS
+    * Iteración
+    * Clausura (Closure)
+    * La Palabra Reservada `this`
+    * Prototipos
+    * Preguntando "Por Qué?"
+* Capítulo 4: El Cuadro Completo
+    * Pillar 1: Contexto y Clausura
+    * Pillar 2: Prototipos
+    * Pillar 3: Tipos y Coerción
+    * A Favor de Veta
+    * En Orden
+* Apéndice A: Explorando Más Allá
+    * Valores vs. Referencias
+    * Diversas Formas de Funciones
+    * Comparación Condicional "Coercionada*"
+    * "Classes" Prototipos
+* Apéndice B: ¡Practica, Practica y Practica!
+    * Pratica Comparaciones
+    * Practica Clausuras
+    * Practica Prototipos
+    * Posibles Soluciones
+
+
+*Nota del traductor: se fuerza la traducción para que se vea la referencia a la palabra que origina el título (Coercive) y para mantener el juego de palabras pretendido por el autor

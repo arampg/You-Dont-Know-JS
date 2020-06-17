@@ -160,67 +160,68 @@ No creas que la consola de desarrollador reproduce fielmente el comportamiento d
 
 ## Many Faces
 
-The term "paradigm" in programming language context refers to a broad (almost universal) mindset and approach to structuring code. Within a paradigm, there are myriad variations of style and form that distinguish programs, including countless different libraries and frameworks that leave their unique signature on any given code.
+El término "paradigma" en el contexto de un lenguaje de programación, se refiere a una mentalidad generalizada (casi universal) y a una forma de estructurar el código. Dentro de un paradigma, hay infinidad de variaciones de estilos y formas que hacen que cada programa sea diferente, incluyendo incontables librerías, y frameworks que dejan su sello único en el código.
 
-But no matter what a program's individual style may be, the big picture divisions around paradigms are almost always evident at first glance of any program.
+Pero no importa cual sea el estilo individual de un programa, en un primer vistazo casi siempre se distinguen los paradigmas en torno al cual gira el código en general.
 
-Typical paradigm-level code categories include procedural, object-oriented (OO/classes), and functional (FP):
+Las categorizaciones típicas de código desde una perspectiva de paradigmas incluyen prodedimental, orientado a objetos (OO/Clases) y funcional(FP):
 
-* Procedural style organizes code in a top-down, linear progression through a pre-determined set of operations, usually collected together in related units called procedures.
+* El estilo procedimental organiza el código de arriba a abajo, con una progresión lineal a través de un determinado conjunto de operaciones, generalmente agrupados juntos partes relacionadas llamadas procedimientos.
 
-* OO style organizes code by collecting logic and data together into units called classes.
+* El estilo OO organiza el código reuniendo lógica y datos juntos dentro de partes llamadas clases.
 
-* FP style organizes code into functions (pure computations as opposed to procedures), and the adaptations of those functions as values.
+* El estilo FP organiza el código en funciones (cálculos puros, al contrario que los procedimientos), y las adaptaciones de esas funciones como valores.
 
-Paradigms are neither right nor wrong. They're orientations that guide and mold how programmers approach problems and solutions, how they structure and maintain their code.
+Los paradigmas no están bien, ni mal. Son orientaciones que guían y moldean cómo los programadores afrontan problemas y soluciones, cómo estructuran y mantienen su código.
 
-Some languages are heavily slanted toward one paradigm—C is procedural, Java/C++ are almost entirely class oriented, and Haskell is FP through and through.
+Algunos lenguajes están fuertemente inclinados hacia un paradigma - C es procedimental, Java/C++ son casi enteramente orientado a clases, Haskell es FP completamente.
 
-But many languages also support code patterns that can come from, and even mix and match from, different paradigms. So called "multi-paradigm languages" offer ultimate flexibility. In some cases, a single program can even have two or more expressions of these paradigms sitting side by side.
+Pero algunos lenguajes admiten patrones de código que provienen de distintos paradigmas, e incluso los mezclan y combinan. Los llamados "lenguajes multi-paradigmas" ofrecen mayor flexibilidad. En algunos casos, un único programa puede tener dos o tres expresiones de estos paradigmas una al lado de la otra.
 
-JavaScript is most definitely a multi-paradigm language. You can write procedural, class-oriented, or FP-style code, and you can make those decisions on a line-by-line basis instead of being forced into an all-or-nothing choice.
+Javascript es definitivamente un lenguaje multi-paradigma. Puedes escribir código procedimental, or del estilo FP, y puedes ir escogiendo qué paradigma usar en cada línea, en lugar de estar obligado a hacer una apuesta de todo o nada. 
 
 ## Backwards & Forwards
 
-One of the most foundational principles that guides JavaScript is preservation of *backwards compatibility*. Many are confused by the implications of this term, and often confuse it with a related but different term: *forwards compatibility*.
+Uno de los principios más fundacionales que guía JavaScript es la preservación de la *compatibilidad hacia atrás*. Muchos están confundidos por la implicación de este término, y a menudo lo confunden con un término relacionado pero distinto: *compatibilidad hacia adelante*.
 
-Let's set the record straight.
+Vamos a poner las cosas en claro.
 
-Backwards compatibility means that once something is accepted as valid JS, there will not be a future change to the language that causes that code to become invalid JS. Code written in 1995—however primitive or limited it may have been!—should still work today. As TC39 members often proclaim, "we don't break the web!"
+Compatibilidad hacia atrás significa que una vez algo se acepta como JS válido, no habrá un cambio futuro en el lenguaje que causará que el código se convvierta en código JS no válido. Código escrito en 1995 -aunque sea primitivo o limitado- debería seguir funcionando a día de hoy. Tal y como los miembros del TC39 a menudo proclaman: "¡No rompemos la web!"
 
-The idea is that JS developers can write code with confidence that their code won't stop working unpredictably because a browser update is released. This makes the decision to choose JS for a program a more wise and safe investment, for years into the future.
+La idea es que los desarrolladores JS pueden escribir código, con la confianza de que su código no dejará de funcionar de repente porque haya salido una nueva versión de navegador. Esto hace que tomar la decisión de usar JS para un programa sea una inversión sabia y segura, para los próximos años.
 
-That "guarantee" is no small thing. Maintaining backwards compatibility, stretched out across almost 25 years of the language's history, creates an enormous burden and a whole slew of unique challenges. You'd be hard pressed to find many other examples in computing of such a commitment to backwards compatibility.
+Esta "garantía" no es cualquier cosa. Mantener compatibilidad hacia atrás, a lo largo de los casi 25 años de historia del lenguahe, crea una carga enorme y un montón de retos únicos. Te encontrarías en problemas si quisieras encontrar muchos ejemplos más en la informática de un compromiso como el de la compatibilidad hacia atrás.
 
-The costs of sticking to this principle should not be casually dismissed. It necessarily creates a very high bar to including changing or extending the language; any decision becomes effectively permanent, mistakes and all. Once it's in JS, it can't be taken out because it might break programs, even if we'd really, really like to remove it!
+El coste de aferrarse a este principio no debería ser descartado con indiferencia. Se crea un listón muy alto a la hora de cambiar o extender el lenguaje; cualquier decisión se convierte en algo eficazmente inalterable, errores incluidos. Una vez está en JS, ¡no se puede quitar porque podría romper programas, aunque realmente quisiéramos quitarlo!
 
-There are some small exceptions to this rule. JS has had some backwards-incompatible changes, but TC39 is extremely cautious in doing so. They study existing code on the web (via browser data gathering) to estimate the impact of such breakage, and browsers ultimately decide and vote on whether they're willing to take the heat from users for a very small-scale breakage weighed against the benefits of fixing or improving some aspect of the language for many more sites (and users).
+Hay algunas pequeñas excepciones a esta norma. JS ha realizado algunos cambios que rompían compatibilidad, aunque TC39 es extremadamente cauto cuando lo hace. Estudian el código en la web (a través de recopilación de datos de los navegadores) para estimar el impacto de estos daños, y los navegadore deciden en última estancia si les vale la pena aguantar el chaparrón por parte de unos pocos usuarios afectados por este daño, para obtener los beneficios de arreglar o mejorar algunos aspectos del lenguaje para otros muchos usuarios (y usuarios).
 
-These kinds of changes are rare, and are almost always in corner cases of usage that are unlikely to be observably breaking in many sites.
+Estos tipos de cambios son raros, y casi siempre son en casos puntuales de uso en los que no va a provocar que muchos sitios dejen de funcionar.
 
-Compare *backwards compatibility* to its counterpart, *forwards compatibility*. Being forwards-compatible means that including a new addition to the language in a program would not cause that program to break if it were run in an older JS engine. **JS is not forwards-compatible**, despite many wishing such, and even incorrectly believing the myth that it is.
+Compara la *compatibilidad hacia atrás* con su opuesto, la *compatibilidad hacia adelante*. Asegurar compatibilidad hacia adelante significa que añadir algo nuevo del lenguage en un programa no provocaría que el programa dejara de funcionar si se ejecutara en un motor más antiguo de JS. **JS no es compatible hacia adelante**, a pesar de que a muchos les gustaría, e incluso creyendo erróneamente el mito de que así es.
 
-HTML and CSS, by contrast, are forwards-compatible but not backwards-compatible. If you dug up some HTML or CSS written back in 1995, it's entirely possible it would not work (or work the same) today. But, if you use a new feature from 2019 in a browser from 2010, the page isn't "broken" -- the unrecognized CSS/HTML is skipped over, while the rest of the CSS/HTML would be processed accordingly.
+HTML y CSS, al contrario, son compatibles hacia adelante, pero no hacia atrás. Si desentierras algo de HTML o CSS escrito en 1995, es completamente posible que ese código no funcione (o quizá, sí) hoy en día. Pero, si usas una funcionalidad nueva de 2019 en un navegador de 2019, la página no deja de funcionar -la parte desconocida de CSS/HTML se ignora, mientras que el resto de CSS/HTML se procesará tal y como se espera.
 
-It may seem desirable for forwards-compatibility to be included in programming language design, but it's generally impractical to do so. Markup (HTML) or styling (CSS) are declarative in nature, so it's much easier to "skip over" unrecognized declarations with minimal impact to other recognized declarations.
+Parece apetecible que en el diseño de un lenguaje de programación se incluya la compatibilidad hacia adelante, pero generalmente es imposible. El marcado HTML o los estilos CSS son declarativos por naturaleza, por lo que es mucho más sencillo saltarse declaraciones desconocidas generando un impacto mínimo en otras declaraciones conocidas.
 
-But chaos and non-determinism would ensue if a programming language engine selectively skipped statements (or even expressions!) that it didn't understand, as it's impossible to ensure that a subsequent part of the program wasn't expecting the skipped-over part to have been processed.
+Pero se provocaría el caos y el anti-determinismo si un motor de un lenguaje de programación selectivamente descartara declaraciones (¡o incluso expresiones!) que no entendiera, ya que es imposible asegurar que una posterior parte del programa no estuviera esperando la parte descartada para ser procesada.
 
-Though JS isn't, and can't be, forwards-compatible, it's critical to recognize JS's backwards compatibility, including the enduring benefits to the web and the constraints and difficulties it places on JS as a result.
+
+Aunque JS no es, y no pueda ser, compatible hacia adelante, es crucial reconocer su compatibilidad hacia atrás, incluyendo los benecicios duraderos en la web y las restricciones y dificultades que esto representa para JS.
 
 ### Jumping the Gaps
 
-Since JS is not forwards-compatible, it means that there is always the potential for a gap between code that you can write that's valid JS, and the oldest engine that your site or application needs to support. If you run a program that uses an ES2019 feature in an engine from 2016, you're very likely to see the program break and crash.
+Ya que JS no es compatible hacia adelante, esto significa que siempre puede haber una brecha entre el código que escribes aun siendo JS válido, y el motor más antiguo que tu sitio o aplicación tiene que soportar. Si ejecutas un programa que usa una funcionalidad de ES2019 en un motor de 2016, es bastante probable que te des cuenta de que no funciona.
 
-If the feature is a new syntax, the program will in general completely fail to compile and run, usually throwing a syntax error. If the feature is an API (such as ES6's `Object.is(..)`), the program may run up to a point but then throw a runtime exception and stop once it encounters the reference to the unknown API.
+Si la funcionalidad es una nueva sintaxis, el programa fallará de forma generalizada al compilarse y ejecutarse, normalmente lanzando un error de sintaxis. Si la funcionalidad es una API (como `Object.is(..)` de ES6), el programa podría funcionar hasta un determinado punto en el que lanzara una excepción en tiempo de ejecución y parara al encontrarse la referencia a esa API desconocida.
 
-Does this mean JS developers should always lag behind the pace of progress, using only code that is on the trailing edge of the oldest JS engine environments they need to support? No!
+¿Significa esto que los desarrolladore JS deberían ir más lentos que el propio progreso, y usar solo código que vaya a la zaga de los motores más antiguos que necesiten soportar? ¡No!
 
-But it does mean that JS developers need to take special care to address this gap.
+Pero sí significa que los desarrolladores JS deber prestar especial atención para gestionar esta brecha.
 
-For new and incompatible syntax, the solution is transpiling. Transpiling is a contrived and community-invented term to describe using a tool to convert the source code of a program from one form to another (but still as textual source code). Typically, forwards-compatibility problems related to syntax are solved by using a transpiler (the most common one being Babel (https://babeljs.io)) to convert from that newer JS syntax version to an equivalent older syntax.
+Para sintaxis nueva e incompatible, la solución es transpilar. Transpilar es un término forzado, inventado por la comunidad, para describir una herramienta que convierte el código fuente de un programa de una forma a otra (pero manteniendo un código fuente textual). Habitualmente, los problemas de compatibilidad hacia adelante relacionados con la sintaxis se solventan usando un transpilador (el más común es Babel: https://babeljs.io) para convertir esta sintaxis más moderna en una equivalente más antigua.
 
-For example, a developer may write a snippet of code like:
+Por ejemplo, un desarrollador podría escribir un fragmento como este:
 
 ```js
 if (something) {
@@ -234,6 +235,7 @@ else {
 ```
 
 This is how the code would look in the source code tree for that application. But when producing the file(s) to deploy to the public website, the Babel transpiler might convert that code to look like this:
+Esto es cómo el código aparecería en el código fuente para esa aplicación. Pero al generar el(los) archivo(s) para desplegar al sitio web público, el transpilador Babel convertiría el código a algo como esto:
 
 ```js
 var x$0, x$1;
